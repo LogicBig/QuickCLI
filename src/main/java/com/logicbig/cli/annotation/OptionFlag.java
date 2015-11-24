@@ -23,13 +23,24 @@ import java.lang.annotation.Target;
 
 /**
  * Method parameter annotated with OptionFlag defines an option flag for the associated command. The enclosing method
- * must be annotated with Command annotation.
+ * must be annotated with Command annotation. An OptionFlag a boolean parameter represented with a single char on
+ * command line e.g. -a
+ * Multiple option flags can be combined together e.g. -xvf
  * Created by Joe on 11/14/2015.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.PARAMETER)
 public @interface OptionFlag {
+    /**
+     * The name of the Option Flag
+     * @return
+     */
     char name();
 
+
+    /**
+     * The description of the option flag.
+     * @return
+     */
     String desc();
 }

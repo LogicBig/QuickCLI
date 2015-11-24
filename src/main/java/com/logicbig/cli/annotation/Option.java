@@ -23,7 +23,7 @@ import java.lang.annotation.Target;
 
 /**
  * Method parameter annotated with Option defines an option argument. The method must be annotated with
- * Command annotation.
+ * Command annotation. Option is specified with double hyphen. e.g. --myoption=&lt;option-value&gt;
  * Created by Joe on 11/14/2015.
  */
 

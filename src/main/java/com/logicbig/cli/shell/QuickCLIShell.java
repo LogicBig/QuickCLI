@@ -40,7 +40,7 @@ import java.util.stream.IntStream;
  * <li>Arguments are input to the command e.g. consider linux command "<code>ls -l fileName </code>", here fileName is the argument to the ls command </li>
  * </ol>
  * <br/>
- * Please see the examples <a href="www.logicbig.com/docs/quick-cli-shell.html">here</a>
+ * Please see the examples <a href="http://www.logicbig.com/projects/QuickCLI.html">here</a>
  *
  * @author Joe Khan.
  */
