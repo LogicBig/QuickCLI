@@ -22,15 +22,25 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Method parameter annotated with Argument provides command line argument information.
+ * Method parameters annotated with Argument provides command line argument information. The enclosing method must
+ * be annotated with Command argument.
  *
  * @author Joe Khan.
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.PARAMETER)
 public @interface Argument {
+
+    /**
+     * The name of the Argument. It should only contains alphabetical letters.
+     * @return
+     */
     String name();
 
+    /**
+     * The description of the argument.
+     * @return
+     */
     String desc();
 
     boolean mandatory() default false;

@@ -22,6 +22,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Method parameter annotated with OptionFlag defines an option flag for the associated command. The enclosing method
+ * must be annotated with Command annotation.
  * Created by Joe on 11/14/2015.
  */
 @Retention(RetentionPolicy.RUNTIME)

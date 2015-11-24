@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.logicbig.cli</groupId>
-    <artifactId>quick-shell</artifactId>
+    <artifactId>quick-cli</artifactId>
     <version>1.0</version>
 
     <dependencies>

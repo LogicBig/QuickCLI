@@ -303,7 +303,7 @@ public class TextTable {
     }
 
 
-    public static List<String> wrapString(String bigString, int maxWidth) {
+    static List<String> wrapString(String bigString, int maxWidth) {
         List<String> lines = new ArrayList<String>();
 
         if (bigString == null || bigString.length() == 0) {

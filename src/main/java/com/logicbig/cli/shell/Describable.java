@@ -33,11 +33,11 @@ abstract class Describable {
         this.description = description;
     }
 
-    public String getName() {
+     String getName() {
         return name;
     }
 
-    public String getDescription() {
+     String getDescription() {
         return description;
     }
 

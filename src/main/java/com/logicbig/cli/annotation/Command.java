@@ -19,6 +19,8 @@ package com.logicbig.cli.annotation;
 import java.lang.annotation.*;
 
 /**
+ * Method annotated with Command gets called when the associated command is fired from the command line. This
+ * annotation along with argument type annotations(which are annotated on method parameters) defines a single command.
  * Created by Joe on 11/14/2015.
  */
 
@@ -26,7 +28,18 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.METHOD)
 public @interface Command {
+
+    /**
+     * The name of the command.
+     *
+     * @return
+     */
     String name();
 
+    /**
+     * The description of the command which is displayed as help.
+     *
+     * @return
+     */
     String desc();
 }

@@ -22,17 +22,39 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * Method parameter annotated with Option defines an option argument. The method must be annotated with
+ * Command annotation.
  * Created by Joe on 11/14/2015.
  */
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.PARAMETER)
 public @interface Option {
+    /**
+     * The name of the option
+     *
+     * @return
+     */
     String name();
 
+    /**
+     * The description of the option.
+     *
+     * @return
+     */
     String desc();
 
+    /**
+     * Values allowed for this option.
+     *
+     * @return
+     */
     String[] valuesAllowed() default {};
 
+    /**
+     * Specifies if this option is mandatory. If yes user must have to enter the value for it.
+     *
+     * @return
+     */
     boolean mandatory() default false;
 }
