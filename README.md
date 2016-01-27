@@ -3,5 +3,5 @@
 A quick way to create command line application in Java.
 </p>
 <p>
-<a href="http://www.logicbig.com/projects/quickcli.html">Details Here</a>
+<a href="http://www.logicbig.com/projects/quickcli/">Details Here</a>
 </p>
